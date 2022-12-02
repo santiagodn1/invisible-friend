@@ -1,0 +1,58 @@
+#imgDiv{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-size: cover;
+    border: 20px solid black;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+  }
+
+  .borde2{
+    border-color: yellow !important;
+    background: white;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+  }
+
+  .borde1{
+    border-color: lightblue !important;
+    background: white;
+    -webkit-animation: action 1.2s infinite  alternate;
+    animation: action 1.2s infinite  alternate;
+  }
+
+  .borde3{
+    border-color: lightcoral !important;
+    background: white;
+    -webkit-animation: action 1.4s infinite  alternate;
+    animation: action 1.4s infinite  alternate;
+  }
+
+  body{
+    background-image: url("fondo.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    
+  }
+
+  @-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
